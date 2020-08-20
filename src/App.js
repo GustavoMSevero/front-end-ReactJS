@@ -6,11 +6,9 @@ function App() {
     const [projects, setProjects] = useState(['Desenvolvimento de app', 'Front-end web']);
 
     function handleAddProject() {
-        projects.push(`Novo projeto ${Date.now()}`);
+        // projects.push(`Novo projeto ${Date.now()}`);
 
-        setProjects([...projects,])
-
-        console.log(projects)
+        setProjects([...projects, `Novo projeto ${Date.now()}`])
     }
 
     return (
